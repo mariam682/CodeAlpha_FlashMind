@@ -1,16 +1,12 @@
-# flash_mind
+FlashMind 
 
-A new Flutter project.
+Overview
+FlashMind is a mobile flashcard study app built with Flutter using the MVVM (Model-View-ViewModel) architecture pattern. The app allows users to create, manage, and study custom flashcards with a beautiful, smooth UI.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Features
+-Welcome Screen — Gradient background with animated floating cards
+-Home Dashboard — Stats card showing total cards, deck status, and next step
+-Study Mode — 3D flip animation, progress bar, Previous/Next navigation with dot indicators
+-Manage Cards — Full CRUD: add, edit, and delete cards via a bottom sheet modal
+-Persistent Storage — Cards are saved locally using SharedPreferences and survive app restarts
+-Empty State — App starts with zero cards; you build your own deck
