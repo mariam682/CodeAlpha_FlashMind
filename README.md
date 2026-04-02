@@ -1,4 +1,4 @@
-# FlashMind 🃏
+# FlashMind
 
 A Flutter flashcard study app built with MVVM architecture.
 
