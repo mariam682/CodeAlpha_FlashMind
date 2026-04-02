@@ -1,12 +1,36 @@
-FlashMind 
+# FlashMind 🃏
 
-Overview
-FlashMind is a mobile flashcard study app built with Flutter using the MVVM (Model-View-ViewModel) architecture pattern. The app allows users to create, manage, and study custom flashcards with a beautiful, smooth UI.
+A Flutter flashcard study app built with MVVM architecture.
 
-Features
--Welcome Screen — Gradient background with animated floating cards
--Home Dashboard — Stats card showing total cards, deck status, and next step
--Study Mode — 3D flip animation, progress bar, Previous/Next navigation with dot indicators
--Manage Cards — Full CRUD: add, edit, and delete cards via a bottom sheet modal
--Persistent Storage — Cards are saved locally using SharedPreferences and survive app restarts
--Empty State — App starts with zero cards; you build your own deck
+## Stack
+Flutter 3.x • Provider • SharedPreferences • UUID • MVVM
+
+## Structure
+```
+lib/
+├── constants/app_colors.dart
+├── models/flashcard.dart
+├── viewmodels/flashcard_viewmodel.dart
+├── views/ (welcome, home, study, manage)
+└── widgets/ (flip_card, card_form_modal)
+```
+
+## Features
+- Animated welcome screen with floating cards
+- Home dashboard with deck stats
+- 3D flip card study mode with progress bar
+- Full CRUD card management (bottom sheet modal)
+- Persistent local storage (SharedPreferences)
+- Starts empty — build your own deck
+
+## Data Model
+```dart
+Flashcard { id, question, answer, createdAt }
+// stored as JSON under key: flashcards_v1
+```
+
+
+## Navigation
+`Welcome → Home → Study / Manage`
+
+MIT License
